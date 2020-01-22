@@ -33,6 +33,11 @@
 						<li><a>Контакты</a></li>
 					</ul>
 			</div>
+			<div class="main-header__menu--authorization">
+				<li>Имя</li>
+				<li><a href="{% url 'logout'%}?next={{request.path}}">Выйти</a></li>   
+				<li><a href="{% url 'login'%}?next={{request.path}}">Логин</a></li>   	
+			</div>
 			<div class="main-header__menu--search">
 				<form action="" method="">
 					<input type="text" name="search" maxlength="20" placeholder="Поиск" class="main-header__menu--search-input">
@@ -85,43 +90,43 @@
 			</div>
 			<div class="main-articles">
 				<div class="main-contentinformation">
-				<div class="main-contentinformation__foto">
-					<img src="./img/star.jpg" alt=""> 
-				</div>
-				<div class="main-contentinformation__infa">
-					<div class="main-contentinformation__infa--h">
-						Метеорные потоки стимулируют круговорот воды на Луне
+					<div class="main-contentinformation__foto">
+						<img src="./img/star.jpg" alt=""> 
 					</div>
-					<div class="main-contentinformation__infa--p">
+					<div class="main-contentinformation__infa">
+						<div class="main-contentinformation__infa--h">
+							Метеорные потоки стимулируют круговорот воды на Луне
+						</div>
+						<div class="main-contentinformation__infa--p">
 				             Исторически лунная поверхность считалась безводной: несмотря на то, что вокруг Луны есть газовая оболочка, она настолько разрежена, что не может удерживать воду миллиарды лет. Эту гипотезу поначалу подтверждали и исследования содержания воды в привезенных с поверхности Луны образцах — ее было либо ничтожно мало, либо вообще ниже предела чувствительности приборов. Но современные данные, полученные автоматическими станциями, указывают не только на присутствие воды в лунном грунте, но и на наличие круговорота воды между лунной поверхностью и атмосферой. Благодаря серии измерений, проведенных аппаратом LADEE во время прохождения Луны через метеорные потоки, появилась возможность оценить, сколько воды содержится в приповерхностных слоях лунной поверхности, а также построить количественную модель водного цикла.
+						</div>
 					</div>
-				</div>
 				</div>
 				<div class="main-contentinformation">
-				<div class="main-contentinformation__infa">
-					<div class="main-contentinformation__infa--h">
-						Метеорные потоки стимулируют круговорот воды на Луне
-					</div>
-					<div class="main-contentinformation__infa--p">
+					<div class="main-contentinformation__infa">
+						<div class="main-contentinformation__infa--h">
+							Метеорные потоки стимулируют круговорот воды на Луне
+						</div>
+						<div class="main-contentinformation__infa--p">
 				             Исторически лунная поверхность считалась безводной: несмотря на то, что вокруг Луны есть газовая оболочка, она настолько разрежена, что не может удерживать воду миллиарды лет. Эту гипотезу поначалу подтверждали и исследования содержания воды в привезенных с поверхности Луны образцах — ее было либо ничтожно мало, либо вообще ниже предела чувствительности приборов. Но современные данные, полученные автоматическими станциями, указывают не только на присутствие воды в лунном грунте, но и на наличие круговорота воды между лунной поверхностью и атмосферой. Благодаря серии измерений, проведенных аппаратом LADEE во время прохождения Луны через метеорные потоки, появилась возможность оценить, сколько воды содержится в приповерхностных слоях лунной поверхности, а также построить количественную модель водного цикла.
+						</div>
 					</div>
-				</div>
-				<div class="main-contentinformation__foto">
-					<img src="./img/star.jpg" alt=""> 
-				</div>
+					<div class="main-contentinformation__foto">
+						<img src="./img/star.jpg" alt=""> 
+					</div>
 				</div>
 				<div class="main-contentinformation">
-				<div class="main-contentinformation__foto">
-					<img src="./img/star.jpg" alt=""> 
-				</div>
-				<div class="main-contentinformation__infa">
-					<div class="main-contentinformation__infa--h">
-						Метеорные потоки стимулируют круговорот воды на Луне
+					<div class="main-contentinformation__foto">
+						<img src="./img/star.jpg" alt=""> 
 					</div>
-					<div class="main-contentinformation__infa--p">
+					<div class="main-contentinformation__infa">
+						<div class="main-contentinformation__infa--h">
+							Метеорные потоки стимулируют круговорот воды на Луне
+						</div>
+						<div class="main-contentinformation__infa--p">
 				             Исторически лунная поверхность считалась безводной: несмотря на то, что вокруг Луны есть газовая оболочка, она настолько разрежена, что не может удерживать воду миллиарды лет. Эту гипотезу поначалу подтверждали и исследования содержания воды в привезенных с поверхности Луны образцах — ее было либо ничтожно мало, либо вообще ниже предела чувствительности приборов. Но современные данные, полученные автоматическими станциями, указывают не только на присутствие воды в лунном грунте, но и на наличие круговорота воды между лунной поверхностью и атмосферой. Благодаря серии измерений, проведенных аппаратом LADEE во время прохождения Луны через метеорные потоки, появилась возможность оценить, сколько воды содержится в приповерхностных слоях лунной поверхности, а также построить количественную модель водного цикла.
+						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		</div>

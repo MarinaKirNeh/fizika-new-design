@@ -33,6 +33,11 @@
 						<li><a>Контакты</a></li>
 					</ul>
 			</div>
+			<div class="main-header__menu--authorization">
+				<li>Имя</li>
+				<li><a href="{% url 'logout'%}?next={{request.path}}">Выйти</a></li>   
+				<li><a href="{% url 'login'%}?next={{request.path}}">Логин</a></li>   	
+			</div>
 			<div class="main-header__menu--search">
 				<form action="" method="">
 					<input type="text" name="search" maxlength="20" placeholder="Поиск" class="main-header__menu--search-input">
@@ -40,7 +45,50 @@
 				</form>
 			</div>
 		</div>
-		<div class="main"></div>
+		<div class="main">
+			<form method="post" action="{% url 'login' %}" class="main-forma">
+				<table >
+					<tr>
+			 			<td class="main-forma__td">Имя пользователя</td>
+			    		<td>
+			    			<input type="text" name="name" maxlength="12" placeholder="Имя" class="main-forma__tdzero">
+			    		</td>
+					</tr>
+
+					<tr>
+			  			<td class="main-forma__td"> Пароль</td>
+			    		<td>
+			    			<input type="text" name="password" maxlength="15" placeholder="Пароль" class="main-forma__tdzero">
+			    		</td>
+					</tr>
+				</table>
+				<input type="submit" value="Вход" / class="main-forma__entrance">
+				<input type="hidden" name="next" value="{{ next }}" />
+			</form>
+
+			<!--<form action="" method="post" class="main-forma">
+    			<table>
+					<tr>
+	    				<td>
+							<label for="id_new_password1">Новый пароль</label>
+						</td>
+	   					<td>
+	   						<input type="text" name="password" maxlength="15" placeholder="Новый пароль" class="main-forma__tdzero">
+	   					</td>
+					</tr>
+					<tr>
+	   					<td>
+							<label for="id_new_password2">Подтверждение пароля:</label>
+						</td>
+	    				<td>
+	    					<input type="text" name="password" maxlength="15" placeholder="Подтверждение пароля" class="main-forma__tdzero">
+	    				</td>
+					</tr>
+    			</table>
+    			<input type="submit" value="Изменить мой пароль" class="main-forma__entrance"/>
+    			<input type="submit" class="btn btn-default btn-lg" value="Сброс пароля" />
+			</form> -->
+		</div>
 		<div class="footer">
 			<div class="footer-titles">© Все права защищены.</div>
 		</div>
